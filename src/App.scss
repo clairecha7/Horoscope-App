@@ -1,0 +1,12 @@
+@import "./scss/variables", "./scss/reset";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Righteous&display=swap");
+
+body {
+  background-image: url("bg.png");
+  background-size: contain;
+  font-family: $secondaryFont;
+}
+
+p {
+  font-family: "Josefin Sans", sans-serif;
+}

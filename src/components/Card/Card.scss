@@ -1,0 +1,67 @@
+@import "../../scss/variables";
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  position: relative;
+  border-radius: 0.5rem;
+  width: 500px;
+  height: 350px;
+  padding: 1rem;
+  overflow: hidden;
+
+  border-radius: 0.5rem;
+  &:hover .description {
+    transform: translateY(0%);
+  }
+
+  .date {
+    color: $secondaryColor;
+    text-align: center;
+    font-size: 0.6rem;
+  }
+
+  // .title {
+  //   background-color: rgba(0, 0, 0, 0.8);
+  //   color: $cardNavBgColor;
+  //   font-size: 1rem;
+  //   padding: 1rem;
+  //   border-radius: 10px;
+  //   font-family: $navbarFont;
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   text-align: center;
+  //   z-index: 2;
+  // }
+
+  img {
+    width: 450px;
+    height: 350px;
+
+    object-fit: cover;
+    border-radius: 0.7rem;
+    filter: grayscale(0%);
+    &:hover {
+      filter: grayscale(100%);
+    }
+  }
+
+  .description {
+    color: $secondaryColor;
+    position: absolute;
+    bottom: 0rem;
+    font-size: 1.3rem;
+    background-color: black;
+    padding: 1rem;
+    transform: translateY(100%);
+    z-index: 2;
+    transition: transform 0.7s ease-in-out;
+    border-radius: 5px;
+    max-height: 400px;
+
+    max-width: 90%;
+  }
+}
